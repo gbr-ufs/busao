@@ -1,0 +1,55 @@
+/* SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br> */
+/* */
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+
+:root {
+  --md-sys-color-primary: rgb(124 88 0);
+  --md-sys-color-surface-tint: rgb(124 88 0);
+  --md-sys-color-on-primary: rgb(255 255 255);
+  --md-sys-color-primary-container: rgb(239 176 42);
+  --md-sys-color-on-primary-container: rgb(99 69 0);
+  --md-sys-color-secondary: rgb(117 90 41);
+  --md-sys-color-on-secondary: rgb(255 255 255);
+  --md-sys-color-secondary-container: rgb(255 219 158);
+  --md-sys-color-on-secondary-container: rgb(121 94 44);
+  --md-sys-color-tertiary: rgb(85 101 0);
+  --md-sys-color-on-tertiary: rgb(255 255 255);
+  --md-sys-color-tertiary-container: rgb(174 197 77);
+  --md-sys-color-on-tertiary-container: rgb(67 80 0);
+  --md-sys-color-error: rgb(186 26 26);
+  --md-sys-color-on-error: rgb(255 255 255);
+  --md-sys-color-error-container: rgb(255 218 214);
+  --md-sys-color-on-error-container: rgb(147 0 10);
+  --md-sys-color-background: rgb(255 248 243);
+  --md-sys-color-on-background: rgb(32 27 18);
+  --md-sys-color-surface: rgb(255 248 243);
+  --md-sys-color-on-surface: rgb(32 27 18);
+  --md-sys-color-surface-variant: rgb(241 224 201);
+  --md-sys-color-on-surface-variant: rgb(80 69 52);
+  --md-sys-color-outline: rgb(130 117 98);
+  --md-sys-color-outline-variant: rgb(212 196 174);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(54 47 38);
+  --md-sys-color-inverse-on-surface: rgb(251 239 224);
+  --md-sys-color-inverse-primary: rgb(252 187 54);
+  --md-sys-color-primary-fixed: rgb(255 222 168);
+  --md-sys-color-on-primary-fixed: rgb(39 25 0);
+  --md-sys-color-primary-fixed-dim: rgb(252 187 54);
+  --md-sys-color-on-primary-fixed-variant: rgb(94 66 0);
+  --md-sys-color-secondary-fixed: rgb(255 222 168);
+  --md-sys-color-on-secondary-fixed: rgb(39 25 0);
+  --md-sys-color-secondary-fixed-dim: rgb(229 193 134);
+  --md-sys-color-on-secondary-fixed-variant: rgb(91 67 19);
+  --md-sys-color-tertiary-fixed: rgb(213 238 112);
+  --md-sys-color-on-tertiary-fixed: rgb(24 30 0);
+  --md-sys-color-tertiary-fixed-dim: rgb(186 209 88);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(63 76 0);
+  --md-sys-color-surface-dim: rgb(228 216 202);
+  --md-sys-color-surface-bright: rgb(255 248 243);
+  --md-sys-color-surface-container-lowest: rgb(255 255 255);
+  --md-sys-color-surface-container-low: rgb(254 242 227);
+  --md-sys-color-surface-container: rgb(248 236 221);
+  --md-sys-color-surface-container-high: rgb(242 230 216);
+  --md-sys-color-surface-container-highest: rgb(237 225 210);
+}

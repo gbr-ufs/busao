@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+services:
+  busao:
+    build:
+      context: .
+      target: dev
+    env_file:
+      - ./.env.dev
+    environment:
+      - TZ=America/Sao_Paulo
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    volumes:
+      - ./client:/app/client
+      - ./server:/app/server
+      - /app/node_modules

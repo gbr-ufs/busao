@@ -1,0 +1,25 @@
+/* SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br> */
+/* */
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans", Roboto, sans-serif, system-ui;
+  line-height: 1.5;
+  min-height: 100dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+  width: 100%;
+}

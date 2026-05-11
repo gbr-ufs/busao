@@ -1,0 +1,98 @@
+/* SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br> */
+/* */
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+
+.cancellation-form {
+  .button-text {
+    &:hover {
+      background-color: color-mix(in srgb, var(--md-sys-color-error) 12%, transparent);
+    }
+    color: var(--md-sys-color-on-error-container);
+  }
+  background-color: var(--md-sys-color-error-container);
+  color: var(--md-sys-color-on-error-container);
+}
+
+.form-actions {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0
+}
+
+fieldset:nth-of-type(2) {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+form {
+  .error-paragraph {
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    position: absolute;
+  }
+  border-radius: 24px;
+  box-shadow: 0 0 6px var(--md-sys-color-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+input[type="radio"] {
+  accent-color: var(--md-sys-color-primary);
+  height: 1.2rem;
+  margin-right: 0.25rem;
+  width: 1.2rem;
+}
+
+input[type="number"], input[type="password"], input[type="search"], input[type="text"] {
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 24px;
+  font-size: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  transition: border-bottom-color 0.2s;
+}
+
+input[type="number"], input[type="password"], input[type="text"] {
+  background-color: var(--md-sys-color-surface-dim);
+  color: inherit;
+}
+
+input[type="number"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="search"]:focus {
+  border-bottom: 2px solid var(--md-sys-color-on-surface);
+  border-bottom-color: var(--md-sys-color-primary);
+  outline: none;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+legend {
+  background: transparent;
+  color: var(--md-sys-color-on-surface);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}

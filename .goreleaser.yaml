@@ -1,0 +1,78 @@
+# SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+# vim: set ts=2 sw=2 tw=0 fo=cnqoj
+
+builds:
+  - skip: true
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+dockers_v2:
+  - dockerfile: Dockerfile
+    extra_files:
+      - .dockerignore
+      - bun.lock
+      - assets
+      - client
+      - drizzle.config.ts
+      - package.json
+      - server
+      - tsconfig.json
+    flags:
+      - "--target=dev"
+    id: busao-dev
+    images:
+      - "ghcr.io/gbr-ufs/busao"
+    labels:
+      org.opencontainers.image.created: "{{.Date}}"
+      org.opencontainers.image.description: "Bus Vacancy Management System."
+      org.opencontainers.image.name: "{{.ProjectName}}"
+      org.opencontainers.image.revision: "{{.FullCommit}}"
+      org.opencontainers.image.source: "{{.GitURL}}"
+      org.opencontainers.image.version: "{{.Version}}"
+    platforms:
+      - linux/amd64
+      - linux/arm64
+    tags:
+      - latest-dev
+      - "{{.Tag}}-dev"
+  - dockerfile: Dockerfile
+    extra_files:
+      - .dockerignore
+      - bun.lock
+      - assets
+      - client
+      - drizzle.config.ts
+      - package.json
+      - server
+      - tsconfig.json
+    flags:
+      - "--target=prod"
+    images:
+      - "ghcr.io/gbr-ufs/busao"
+    labels:
+      org.opencontainers.image.created: "{{.Date}}"
+      org.opencontainers.image.description: "Bus Vacancy Management System."
+      org.opencontainers.image.name: "{{.ProjectName}}"
+      org.opencontainers.image.revision: "{{.FullCommit}}"
+      org.opencontainers.image.source: "{{.GitURL}}"
+      org.opencontainers.image.version: "{{.Version}}"
+    platforms:
+      - linux/amd64
+      - linux/arm64
+    tags:
+      - latest
+      - "{{.Tag}}"
+release:
+  footer: >-
+
+    ---
+
+    Released by [GoReleaser](https://github.com/goreleaser/goreleaser).
+version: 2

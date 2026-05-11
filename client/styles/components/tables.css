@@ -1,0 +1,127 @@
+/* SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br> */
+/* */
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+
+.action-column {
+  text-align: right;
+  width: 60px;
+}
+
+.tables {
+  table {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  tbody {
+    display: block;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+.table-container {
+  background-color: var(--md-sys-color-surface-dim);
+  border-radius: 24px;
+  box-shadow: 0 2px 6px var(--md-sys-color-shadow);
+  flex: 1;
+  overflow: hidden;
+  min-width: 340px;
+}
+
+caption {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border-bottom: 1px solid color-mix(in srgb, var(--md-sys-color-shadow) 20%, transparent);
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+th {
+  border-bottom: 2px solid color-mix(in srgb, var(--md-sys-color-shadow) 40%, transparent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+td:has(form button.button-error) {
+  text-align: right;
+}
+
+td form {
+  align-items: center;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+td form, th form {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+td form button.button-error {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 0.75rem;
+  justify-content: center;
+  min-height: 28px;
+  min-width: 28px;
+  padding: 0.25rem 0.6rem;
+}
+
+th form {
+  background: transparent;
+  display: block;
+  width: 100%;
+}
+
+th form button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+th form input[type="search"] {
+  width: 100%;
+}
+
+tfoot th {
+  text-align: center;
+}
+
+tfoot form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+tfoot form button {
+  display: inline-flex;
+  justify-content: center;
+  width: auto;
+}
+
+thead tr.search-row th {
+  border-bottom: none;
+}
