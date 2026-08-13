@@ -10,7 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Noto Sans", Roboto, sans-serif, system-ui;
-  line-height: 1.5;
   min-height: 100dvh;
 }
 

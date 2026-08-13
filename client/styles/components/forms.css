@@ -81,7 +81,6 @@ input[type="number"]:focus, input[type="password"]:focus, input[type="text"]:foc
 }
 
 input[type="search"] {
-  box-sizing: border-box;
   width: 100%;
 }
 

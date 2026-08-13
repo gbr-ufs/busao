@@ -32,9 +32,6 @@
     user-select: all;
     word-break: break-all;
   }
-  p {
-    margin: 0;
-  }
   strong {
     word-break: break-all;
   }
