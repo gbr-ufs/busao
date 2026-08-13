@@ -45,6 +45,11 @@
   color: var(--md-sys-color-on-tertiary-container);
 }
 
+.htmx-swapping {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
 .waitlist-paragraph {
   background-color: var(--md-sys-color-secondary-container);
   color: var(--md-sys-color-on-secondary-container);
