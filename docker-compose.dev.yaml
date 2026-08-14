@@ -15,6 +15,7 @@ services:
       - "3000:3000"
     restart: unless-stopped
     volumes:
+      - ./assets:/app/assets
       - ./client:/app/client
       - ./server:/app/server
       - /app/node_modules

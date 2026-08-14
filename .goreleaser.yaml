@@ -17,8 +17,8 @@ dockers_v2:
   - dockerfile: Dockerfile
     extra_files:
       - .dockerignore
-      - bun.lock
       - assets
+      - bun.lock
       - client
       - drizzle.config.ts
       - package.json
@@ -45,8 +45,8 @@ dockers_v2:
   - dockerfile: Dockerfile
     extra_files:
       - .dockerignore
-      - bun.lock
       - assets
+      - bun.lock
       - client
       - drizzle.config.ts
       - package.json
