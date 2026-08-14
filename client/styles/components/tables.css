@@ -47,13 +47,13 @@ table {
 }
 
 td, th {
-  border-bottom: 1px solid color-mix(in srgb, var(--md-sys-color-shadow) 20%, transparent);
+  border-bottom: 1px solid var(--md-sys-color-shadow20);
   padding: 1rem 1.5rem;
   text-align: left;
 }
 
 th {
-  border-bottom: 2px solid color-mix(in srgb, var(--md-sys-color-shadow) 40%, transparent);
+  border-bottom: 2px solid var(--md-sys-color-shadow40);
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.05em;

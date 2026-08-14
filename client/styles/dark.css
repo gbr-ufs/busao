@@ -17,6 +17,7 @@
   --md-sys-color-tertiary-container: rgb(174 197 77);
   --md-sys-color-on-tertiary-container: rgb(67 80 0);
   --md-sys-color-error: rgb(255 180 171);
+  --md-sys-color-error10: rgba(255, 180, 171, 0.1);
   --md-sys-color-on-error: rgb(105 0 5);
   --md-sys-color-error-container: rgb(147 0 10);
   --md-sys-color-on-error-container: rgb(255 218 214);
@@ -29,6 +30,8 @@
   --md-sys-color-outline: rgb(157 143 122);
   --md-sys-color-outline-variant: rgb(80 69 52);
   --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-shadow20: rgba(0, 0, 0, 0.2);
+  --md-sys-color-shadow40: rgba(0, 0, 0, 0.4);
   --md-sys-color-scrim: rgb(0 0 0);
   --md-sys-color-inverse-surface: rgb(237 225 210);
   --md-sys-color-inverse-on-surface: rgb(54 47 38);
