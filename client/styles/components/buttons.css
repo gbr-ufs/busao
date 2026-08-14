@@ -13,7 +13,7 @@
 
 .button-text:hover {
   background-color: var(--md-sys-color-surface-dim);
-  filter: brightness(1.1);
+  filter: brightness(0.9);
 }
 
 button {
@@ -35,5 +35,6 @@ button.button-error {
 }
 
 button:hover {
-  filter: brightness(1.1);
+  cursor: pointer;
+  filter: brightness(0.9);
 }

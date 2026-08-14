@@ -58,6 +58,14 @@ footer {
 }
 
 header {
+  a {
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  a:hover {
+    background-color: var(--md-sys-color-surface-dim);
+  }
   align-items: center;
   background-color: var(--md-sys-color-surface);
   box-shadow: 0 0 6px var(--md-sys-color-shadow);
@@ -66,6 +74,7 @@ header {
   h1 {
     a {
       color: inherit;
+      padding: 0 1rem;
       text-decoration: none;
     }
     font-size: 2.25rem;
@@ -74,15 +83,9 @@ header {
   justify-content: space-between;
   nav {
     a {
-      border-radius: 20px;
       color: var(--md-sys-color-on-surface);
       font-weight: 500;
       padding: 0.5rem 1rem;
-      text-decoration: none;
-      transition: background-color 0.2s;
-    }
-    a:hover {
-      background-color: var(--md-sys-color-surface-dim);
     }
     ul {
       display: flex;
