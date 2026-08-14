@@ -173,3 +173,13 @@ export const server = serve({
 		return renderNotFoundPage(getI18N(request));
 	},
 });
+
+process.on("SIGINT", () => {
+	server.stop(true);
+	process.exit(0);
+});
+
+process.on("SIGTERM", () => {
+	server.stop(true);
+	process.exit(0);
+});
