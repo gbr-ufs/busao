@@ -6,7 +6,7 @@ import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
 	dbCredentials: {
-		url: process.env.DATABASE_URL || "busao.sqlite",
+		url: process.env.DATABASE_URL || "data/busao.sqlite",
 	},
 	dialect: "sqlite",
 	out: "./drizzle",

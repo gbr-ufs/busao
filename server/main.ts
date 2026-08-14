@@ -28,7 +28,7 @@ import { renderNotFoundPage } from "./views/status/notFound";
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "admin";
 const OPENING_HOUR = parseInt(process.env.OPENING_HOUR || "9", 10);
 const MAX_SEATS = parseInt(process.env.MAX_SEATS || "40", 10);
-const SQLITE = new Database(process.env.DATABASE_URL || "busao.sqlite");
+const SQLITE = new Database(process.env.DATABASE_URL || "data/busao.sqlite");
 
 set_useful_sqlite_pragmas(SQLITE);
 

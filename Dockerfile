@@ -16,6 +16,9 @@ RUN bunx --bun drizzle-kit generate
 # Make tables strict for type checking.
 RUN find drizzle/ -name "*.sql" -exec sed -i "s/^);$/) STRICT;/" {} +
 
+# Database directory for production.
+RUN mkdir -p /app/data
+
 # 1.3.13-alpine
 FROM oven/bun@sha256:4de475389889577f346c636f956b42a5c31501b654664e9ae5726f94d7bb5349 as dev
 
@@ -37,6 +40,7 @@ WORKDIR /app
 
 USER 1000
 
+COPY --from=builder --chown=1000:1000 /app/data /app/data
 COPY --from=builder --chown=1000:1000 /app/drizzle /app/drizzle
 COPY --from=builder --chown=1000:1000 /app/node_modules /app/node_modules
 
