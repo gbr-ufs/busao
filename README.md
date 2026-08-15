@@ -6,6 +6,8 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # [busao: Bus Vacancy Management System](https://gbr-ufs.github.io/busao/)
 
+[![codecov](https://codecov.io/gh/gbr-ufs/busao/graph/badge.svg?token=7CPT757HPE)](https://codecov.io/gh/gbr-ufs/busao)
+
 [![License](https://img.shields.io/badge/license_-GPLv3+-822422?logo=GNU&logoColor=black&labelColor=white)](LICENSE)
 
 ![Screenshot of the website's homepage showcasing two tables for two types of trips. A form asks for a name and three types of trips (the additional type equates to both trips).](img/index.png)
